@@ -141,12 +141,20 @@ class _LoginScreenState extends State<LoginScreen> {
                           // ignore: non_constant_identifier_names
                           builder: (Context) => const SignUpScreen()));
                 },
-                child: const Text(
-                  'Sign up',
-                  style: TextStyle(
-                      fontFamily: 'Jomolhari',
-                      fontSize: 24,
-                      color: Color.fromARGB(255, 242, 35, 83)),
+                child: InkWell(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const SignUpScreen()));
+                  },
+                  child: const Text(
+                    'Sign up',
+                    style: TextStyle(
+                        fontFamily: 'Jomolhari',
+                        fontSize: 24,
+                        color: Color.fromARGB(255, 242, 35, 83)),
+                  ),
                 ),
               ),
             ],

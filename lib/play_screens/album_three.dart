@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:musify_app/playlists_screens/playlist7.dart';
+import 'package:musify_app/playlists_screens/playlist8.dart';
+import 'package:musify_app/playlists_screens/playlist9.dart';
 
 class AlbumThree extends StatefulWidget {
   const AlbumThree({super.key});
@@ -17,41 +20,65 @@ class _AlbumThreeState extends State<AlbumThree> {
           children: [
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Container(
-                height: 150,
-                width: 150,
-                decoration: BoxDecoration(
-                    image: const DecorationImage(
-                        fit: BoxFit.cover,
-                        image: AssetImage('images/songs.jpg')),
-                    color: const Color.fromARGB(32, 255, 255, 255),
-                    borderRadius: BorderRadius.circular(18)),
+              child: InkWell(
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const PlayList7()));
+                },
+                child: Container(
+                  height: 150,
+                  width: 150,
+                  decoration: BoxDecoration(
+                      image: const DecorationImage(
+                          fit: BoxFit.cover,
+                          image: AssetImage('images/songs.jpg')),
+                      color: const Color.fromARGB(32, 255, 255, 255),
+                      borderRadius: BorderRadius.circular(18)),
+                ),
               ),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Container(
-                height: 150,
-                width: 150,
-                decoration: BoxDecoration(
-                    image: const DecorationImage(
-                        fit: BoxFit.cover,
-                        image: AssetImage('images/bili.jpg')),
-                    color: const Color.fromARGB(32, 255, 255, 255),
-                    borderRadius: BorderRadius.circular(18)),
+              child: InkWell(
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const PlayList8()));
+                },
+                child: Container(
+                  height: 150,
+                  width: 150,
+                  decoration: BoxDecoration(
+                      image: const DecorationImage(
+                          fit: BoxFit.cover,
+                          image: AssetImage('images/bili.jpg')),
+                      color: const Color.fromARGB(32, 255, 255, 255),
+                      borderRadius: BorderRadius.circular(18)),
+                ),
               ),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Container(
-                height: 150,
-                width: 150,
-                decoration: BoxDecoration(
-                    image: const DecorationImage(
-                        fit: BoxFit.cover,
-                        image: AssetImage('images/slejj.jpg')),
-                    color: const Color.fromARGB(32, 255, 255, 255),
-                    borderRadius: BorderRadius.circular(18)),
+              child: InkWell(
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const PlayList9()));
+                },
+                child: Container(
+                  height: 150,
+                  width: 150,
+                  decoration: BoxDecoration(
+                      image: const DecorationImage(
+                          fit: BoxFit.cover,
+                          image: AssetImage('images/slejj.jpg')),
+                      color: const Color.fromARGB(32, 255, 255, 255),
+                      borderRadius: BorderRadius.circular(18)),
+                ),
               ),
             ),
           ],

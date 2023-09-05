@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:musify_app/account_screens/home_screen.dart';
+import 'package:musify_app/favourite_screen.dart';
+import 'package:musify_app/files_Screen.dart';
 
 import 'package:musify_app/play_screens/album_one.dart';
 import 'package:musify_app/play_screens/album_three.dart';
 import 'package:musify_app/play_screens/album_two.dart';
+import 'package:musify_app/search_screen.dart';
 
 class AlbumScreen extends StatefulWidget {
   const AlbumScreen({super.key});
@@ -55,70 +59,102 @@ class _AlbumScreenState extends State<AlbumScreen> {
                 const SizedBox(
                   width: 40,
                 ),
-                Container(
-                  height: 50,
-                  width: 50,
-                  // ignore: sort_child_properties_last
-                  child: const Center(
-                    child: Icon(
-                      Icons.favorite_border_outlined,
-                      size: 35,
+                InkWell(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const FavouriteScreen()));
+                  },
+                  child: Container(
+                    height: 50,
+                    width: 50,
+                    // ignore: sort_child_properties_last
+                    child: const Center(
+                      child: Icon(
+                        Icons.favorite_border_outlined,
+                        size: 35,
+                      ),
                     ),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(50),
+                        color: const Color.fromARGB(255, 242, 35, 83)),
                   ),
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(50),
-                      color: const Color.fromARGB(255, 242, 35, 83)),
                 ),
                 const SizedBox(
                   width: 40,
                 ),
-                Container(
-                  // ignore: sort_child_properties_last
-                  child: const Center(
-                    child: Icon(
-                      Icons.search_outlined,
-                      size: 35,
+                InkWell(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const SearchScreen()));
+                  },
+                  child: Container(
+                    // ignore: sort_child_properties_last
+                    child: const Center(
+                      child: Icon(
+                        Icons.search_outlined,
+                        size: 35,
+                      ),
                     ),
+                    height: 50,
+                    width: 50,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(50),
+                        color: const Color.fromARGB(255, 242, 35, 83)),
                   ),
-                  height: 50,
-                  width: 50,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(50),
-                      color: const Color.fromARGB(255, 242, 35, 83)),
                 ),
                 const SizedBox(
                   width: 40,
                 ),
-                Container(
-                  // ignore: sort_child_properties_last
-                  child: const Center(
-                    child: Icon(
-                      Icons.home_outlined,
-                      size: 35,
+                InkWell(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const HomeScreen()));
+                  },
+                  child: Container(
+                    // ignore: sort_child_properties_last
+                    child: const Center(
+                      child: Icon(
+                        Icons.home_outlined,
+                        size: 35,
+                      ),
                     ),
+                    height: 50,
+                    width: 50,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(50),
+                        color: const Color.fromARGB(255, 242, 35, 83)),
                   ),
-                  height: 50,
-                  width: 50,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(50),
-                      color: const Color.fromARGB(255, 242, 35, 83)),
                 ),
                 const SizedBox(
                   width: 40,
                 ),
-                Container(
-                  // ignore: sort_child_properties_last
-                  child: const Center(
-                    child: Icon(
-                      Icons.folder_outlined,
-                      size: 35,
+                InkWell(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const FilesScreen()));
+                  },
+                  child: Container(
+                    // ignore: sort_child_properties_last
+                    child: const Center(
+                      child: Icon(
+                        Icons.folder_outlined,
+                        size: 35,
+                      ),
                     ),
+                    height: 50,
+                    width: 50,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(50),
+                        color: const Color.fromARGB(255, 242, 35, 83)),
                   ),
-                  height: 50,
-                  width: 50,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(50),
-                      color: const Color.fromARGB(255, 242, 35, 83)),
                 ),
               ],
             ),
