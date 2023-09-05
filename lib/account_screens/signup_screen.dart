@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:musify_app/account_screens/home_screen.dart';
-import 'package:musify_app/account_screens/reset_screen.dart';
 
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});
