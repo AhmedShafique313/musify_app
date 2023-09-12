@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:musify_app/Song_screen.dart';
 
 class Playlist2 extends StatefulWidget {
   const Playlist2({super.key});
@@ -53,7 +54,10 @@ class _Playlist2State extends State<Playlist2> {
                 tileColor: const Color.fromRGBO(248, 248, 248, 0.092),
                 title: Text(names2[index]),
                 trailing: const Icon(Icons.more_vert),
-                onTap: () {},
+                onTap: () {
+                  // Navigator.push(context,
+                  //     MaterialPageRoute(builder: (context) => const Song1()));
+                },
               ),
             );
           },
