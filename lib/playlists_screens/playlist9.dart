@@ -52,9 +52,11 @@ class _PlayList9State extends State<PlayList9> {
                 subtitle: const Text('By Mesut Kurtis'),
                 tileColor: const Color.fromRGBO(248, 248, 248, 0.092),
                 title: Text(names9[index]),
+                // ignore: prefer_const_constructors
                 trailing: const Icon(
                   Icons.more_vert,
                 ),
+
                 onTap: () {},
               ),
             );
