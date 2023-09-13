@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:musify_app/Song_screen.dart';
 import 'package:musify_app/account_screens/home_screen.dart';
 import 'package:musify_app/favourite_screen.dart';
 import 'package:musify_app/files_Screen.dart';
@@ -61,10 +62,8 @@ class _AlbumScreenState extends State<AlbumScreen> {
                 ),
                 InkWell(
                   onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const FavouriteScreen()));
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => const Song1()));
                   },
                   child: Container(
                     height: 50,
@@ -72,7 +71,7 @@ class _AlbumScreenState extends State<AlbumScreen> {
                     // ignore: sort_child_properties_last
                     child: const Center(
                       child: Icon(
-                        Icons.favorite_border_outlined,
+                        Icons.play_circle_outline,
                         size: 35,
                       ),
                     ),

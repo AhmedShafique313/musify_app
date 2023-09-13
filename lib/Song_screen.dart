@@ -13,8 +13,15 @@ class _Song1State extends State<Song1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.transparent,
       appBar: AppBar(
+        backgroundColor: Colors.transparent,
         elevation: 1,
+      ),
+      body: Column(
+        children: [
+          Container(),
+        ],
       ),
     );
   }
