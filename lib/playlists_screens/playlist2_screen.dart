@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:musify_app/Song_screen.dart';
 
 class Playlist2 extends StatefulWidget {
   const Playlist2({super.key});
