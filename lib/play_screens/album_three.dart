@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:musify_app/playlists_screens/playlist7.dart';
-import 'package:musify_app/playlists_screens/playlist8.dart';
-import 'package:musify_app/playlists_screens/playlist9.dart';
 
 class AlbumThree extends StatefulWidget {
   const AlbumThree({super.key});
@@ -21,12 +18,7 @@ class _AlbumThreeState extends State<AlbumThree> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: InkWell(
-                onTap: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const PlayList7()));
-                },
+                onTap: () {},
                 child: Container(
                   height: 150,
                   width: 150,
@@ -42,12 +34,7 @@ class _AlbumThreeState extends State<AlbumThree> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: InkWell(
-                onTap: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const PlayList8()));
-                },
+                onTap: () {},
                 child: Container(
                   height: 150,
                   width: 150,
@@ -63,12 +50,7 @@ class _AlbumThreeState extends State<AlbumThree> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: InkWell(
-                onTap: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const PlayList9()));
-                },
+                onTap: () {},
                 child: Container(
                   height: 150,
                   width: 150,
