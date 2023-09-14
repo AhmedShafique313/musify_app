@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:musify_app/Song_screen.dart';
+
 import 'package:musify_app/account_screens/home_screen.dart';
 // ignore: unused_import
-import 'package:musify_app/favourite_screen.dart';
-import 'package:musify_app/files_Screen.dart';
+
 
 import 'package:musify_app/play_screens/album_one.dart';
 import 'package:musify_app/play_screens/album_three.dart';
 import 'package:musify_app/play_screens/album_two.dart';
-import 'package:musify_app/search_screen.dart';
+
 
 class AlbumScreen extends StatefulWidget {
   const AlbumScreen({super.key});
@@ -63,8 +62,7 @@ class _AlbumScreenState extends State<AlbumScreen> {
                 ),
                 InkWell(
                   onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => const Song1()));
+                    
                   },
                   child: Container(
                     height: 50,
@@ -86,10 +84,7 @@ class _AlbumScreenState extends State<AlbumScreen> {
                 ),
                 InkWell(
                   onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const SearchScreen()));
+                   
                   },
                   child: Container(
                     // ignore: sort_child_properties_last
@@ -136,10 +131,7 @@ class _AlbumScreenState extends State<AlbumScreen> {
                 ),
                 InkWell(
                   onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const FilesScreen()));
+                   
                   },
                   child: Container(
                     // ignore: sort_child_properties_last
